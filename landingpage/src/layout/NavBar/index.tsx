@@ -1,5 +1,5 @@
 import { CiCircleRemove } from "react-icons/ci";
-import Button from "../../components/Button";
+import Button from "../../components/UI/Button";
 
 export default function NavBar() {
   return (
@@ -34,14 +34,14 @@ export default function NavBar() {
             </li>
           </ul>
         </nav>
-          <a>
-            <Button
-              text="Agendar Horário"
-              text_color="text-white"
-              background_color="bg-[#B4893F]"
-              link="/"
-            />
-          </a>
+        <a>
+          <Button
+            text="Agendar Horário"
+            text_color="text-[#130e0b]"
+            background_color="bg-[#c89947] hover:bg-[#b38338]"
+            link="/"
+          />
+        </a>
       </header>
     </>
   );

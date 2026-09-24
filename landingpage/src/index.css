@@ -1,5 +1,6 @@
 @import "tailwindcss";
+@config "../tailwind.config.js";
 
 :root {
-  background-color: #17110D;
+  background-color: #17110d;
 }

@@ -1,16 +1,11 @@
-import Hero from "./layout/Hero"
-import NavBar from "./layout/NavBar"
-
+import Home from "./pages/Home/Home";
 
 function App() {
-
-
   return (
     <>
-    <NavBar />
-    <Hero />
+      <Home />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
