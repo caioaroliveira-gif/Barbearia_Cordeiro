@@ -1,4 +1,3 @@
-import { Message } from './../node_modules/typescript/vendor/vscode-jsonrpc/lib/common/messages.d';
 import { type Request, type Response } from "express";
 import express from "express";
 
