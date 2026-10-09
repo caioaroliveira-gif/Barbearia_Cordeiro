@@ -1,6 +1,11 @@
 {
   "dependencies": {
+    "@types/express": "^5.0.6",
     "create": "^0.5.5",
+    "express": "^5.2.1",
     "vite": "^8.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
   }
 }
