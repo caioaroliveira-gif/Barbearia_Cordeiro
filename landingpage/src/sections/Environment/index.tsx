@@ -8,35 +8,32 @@ import {
 import { GiComb } from "react-icons/gi";
 
 export default function Environment() {
-  // 1. Matriz de placeholders.
-  // Já deixamos as classes do Grid preparadas aqui para facilitar a manutenção.
   const galleryPlaceholders = [
     {
       id: "cadeiras",
       title: "Cadeiras",
       icon: <TbArmchair size={20} />,
       gridClass: "md:col-span-2 md:row-span-2 aspect-square md:aspect-auto",
-      bgClass: "bg-[#251A13]", // Tom castanho escuro texturizado
+      bgClass: "bg-[#251A13]",
     },
     {
       id: "tesouras",
       title: "Tesouras",
       icon: <TbScissors size={20} />,
       gridClass: "col-span-1 aspect-[4/3] md:aspect-auto",
-      bgClass: "bg-[#6A2C29]", // Tom bordô
+      bgClass: "bg-[#6A2C29]",
     },
     {
       id: "espelhos",
       title: "Espelhos",
       icon: <TbSquare size={20} />,
       gridClass: "col-span-1 aspect-[4/3] md:aspect-auto",
-      bgClass: "bg-[#1E1510]", // Tom quase preto
+      bgClass: "bg-[#1E1510]",
     },
     {
       id: "navalhas",
       title: "Navalhas",
       icon: <TbCut size={20} />,
-      // Adicionado md:aspect-auto aqui
       gridClass: "col-span-1 aspect-square md:aspect-auto",
       bgClass: "bg-brass",
     },
@@ -44,7 +41,6 @@ export default function Environment() {
       id: "pentes",
       title: "Pentes",
       icon: <GiComb size={20} />,
-      // Adicionado md:aspect-auto aqui
       gridClass: "col-span-1 aspect-square md:aspect-auto",
       bgClass: "bg-[#2A1E16]",
     },
@@ -52,7 +48,6 @@ export default function Environment() {
       id: "rececao",
       title: "Recepção",
       icon: <TbCoffee size={20} />,
-      // Adicionado md:aspect-auto aqui
       gridClass: "col-span-1 aspect-square md:aspect-auto",
       bgClass: "bg-[#201611]",
     },
@@ -75,11 +70,6 @@ export default function Environment() {
           </p>
         </div>
 
-        {/* 
-          A magia acontece aqui:
-          grid-cols-1 no telemóvel (tudo empilhado) e grid-cols-3 a partir de tablets (md).
-          auto-rows-[240px] define que cada linha do grid terá exatamente 240px de altura no desktop.
-        */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:auto-rows-[240px]">
           {galleryPlaceholders.map((item) => (
             <div
