@@ -9,10 +9,12 @@
     "@types/bcrypt": "^6.0.0",
     "@types/express": "^5.0.6",
     "@types/jsonwebtoken": "^9.0.10",
+    "@types/knex": "^0.15.2",
     "@types/pg": "^8.23.1",
     "bcrypt": "^6.0.0",
     "expres": "^0.0.5",
     "jsonwebtoken": "^9.0.3",
+    "knex": "^3.3.0",
     "pg": "^8.23.1"
   },
   "type": "module"
